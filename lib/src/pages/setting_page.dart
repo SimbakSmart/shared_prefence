@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_prefence/src/widgets/menu_widget.dart';
 
 class SettingsPage extends StatefulWidget {
   static final String routeName="settings";
@@ -26,7 +27,14 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('Ajustes'),
+       // backgroundColor: (prefs.colorSecundario) ? Colors.teal : Colors.blue,
+      ),
+      drawer: MenuWidget(),
+      body: Center(
+        child: Text('Settings Page'),
+      ),
     );
   }
 }

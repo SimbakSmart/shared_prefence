@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_prefence/src/widgets/menu_widget.dart';
 
 class HomePage extends StatelessWidget {
 
@@ -11,7 +12,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      body: Text('Home Page'),
+      appBar: AppBar(
+        title: Text('Preferencias de Usuario'),
+        //backgroundColor: (prefs.colorSecundario) ? Colors.teal : Colors.blue,
+      ),
+      drawer: MenuWidget(),
+      body: Center(
+          child: Text('Home Page')
+      ),
     );
   }
 }
