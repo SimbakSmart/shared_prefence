@@ -54,8 +54,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Ajustes'),
-
-       // backgroundColor: (prefs.getColorSecundario()) ? Colors.teal : Colors.blue,
+        backgroundColor: (prefs.getColorSecundario()) ? Colors.teal : Colors.blue,
       ),
       drawer: MenuWidget(),
       body: ListView(

@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Preferencias de Usuario'),
-       // backgroundColor: (prefs.getColorSecundario() ==  null) ? Colors.teal : Colors.blue,
+        backgroundColor: (prefs.getColorSecundario()) ? Colors.teal : Colors.blue,
       ),
       drawer: MenuWidget(),
       body: Column(
